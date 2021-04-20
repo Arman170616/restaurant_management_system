@@ -2,10 +2,14 @@ import React from 'react';
 
 import Menu from './Menu';
 
-let Body = () => {
+import Home from './Home';
+import Contact from './Contact';
+import About from './About';
+
+const Body = () => {
     return (
         <div>
-            <Menu />
+
         </div>
 
     );
