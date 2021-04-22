@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
+
 class Home extends Component {
 
     render() {
-        document.title = "IEEE PES Restaurant";
+        document.title = "Bohubrihi Restaurant";
         return (
             <div>
 
