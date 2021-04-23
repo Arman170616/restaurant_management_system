@@ -10,6 +10,7 @@ const LoadComments = props => {
                 <div key={comment.id}>
                     <h5> {comment.author} </h5>
                     <p>{comment.comment}</p>
+                    <p>Rating:{comment.rating}</p>
                     <p>{dateformat(comment.date, "dddd, mmmm ds, yyyy, h:MM:ss TT")}</p>
                 </div>
             );

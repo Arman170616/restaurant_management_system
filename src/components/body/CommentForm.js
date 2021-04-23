@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 import { Form, Button, Input } from 'reactstrap';
+import { connect } from 'react-redux';
 
+const mapDispatchToProps = dispatch => {
+    return {
+        addComment: (dishId, rating, author, comment) => dispatch({
+            type: 'ADD_COMMENT',
+            payload: {
+                dishId: dishId,
+                author: author,
+                rating: rating,
+                comment: comment
+            }
+
+        })
+    }
+}
 
 class CommentForm extends Component {
     constructor(props) {
@@ -23,11 +38,14 @@ class CommentForm extends Component {
 
     handleSubmit = event => {
         console.log(this.state);
+        this.props.addComment(this.props.dishId, this.state.rating, this.state.author, this.state.comment);
+
         this.setState({
             author: '',
             rating: '',
             comment: ''
-        })
+        });
+
         event.preventDefault();
     }
 
@@ -71,4 +89,4 @@ class CommentForm extends Component {
     }
 }
 
-export default CommentForm;
+export default connect(null, mapDispatchToProps)(CommentForm);
