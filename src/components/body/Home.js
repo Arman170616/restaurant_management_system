@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Loading from './Loading';
 
 class Home extends Component {
 
@@ -7,7 +7,7 @@ class Home extends Component {
         document.title = "pyarena cookies";
         return (
             <div>
-
+                <Loading />
             </div>
         );
     }
