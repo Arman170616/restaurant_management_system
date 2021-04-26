@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class Home extends Component {
 
     render() {
-        document.title = "Bohubrihi Restaurant";
+        document.title = "pyarena cookies";
         return (
             <div>
 

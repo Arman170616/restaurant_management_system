@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => {
-    document.title = "About | PES Restaurant";
+    document.title = "About | pyarena cookies";
     return (
         <div>
 

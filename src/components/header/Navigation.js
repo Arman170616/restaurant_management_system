@@ -23,7 +23,7 @@ class Navigation extends Component {
                     <div className='container'>
                         <NavbarToggler onClick={this.navToggle} />
 
-                        <NavbarBrand href='/'>IEEE PES Restaurant</NavbarBrand>
+                        <NavbarBrand href='/'>pyarena cookies</NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
 
                             <Nav className='mr-auto' navbar>
